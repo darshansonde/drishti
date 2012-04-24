@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D6F53CC15470E1E0000B24A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6F53CB15470E1E0000B24A /* UIKit.framework */; };
+		7D6F53CE15470E1E0000B24A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6F53CD15470E1E0000B24A /* Foundation.framework */; };
+		7D6F53D015470E1E0000B24A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6F53CF15470E1E0000B24A /* CoreGraphics.framework */; };
+		7D6F53D615470E1E0000B24A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D6F53D415470E1E0000B24A /* InfoPlist.strings */; };
+		7D6F53D815470E1E0000B24A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6F53D715470E1E0000B24A /* main.m */; };
+		7D6F53DC15470E1E0000B24A /* DAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6F53DB15470E1E0000B24A /* DAppDelegate.m */; };
+		7D6F53DF15470E1E0000B24A /* DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6F53DE15470E1E0000B24A /* DViewController.m */; };
+		7D6F53E215470E1E0000B24A /* DViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D6F53E015470E1E0000B24A /* DViewController.xib */; };
+		7D6F53EC15470F840000B24A /* earth.kml in Resources */ = {isa = PBXBuildFile; fileRef = 7D6F53EB15470F840000B24A /* earth.kml */; };
+		7D6F53F815470FE70000B24A /* DMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6F53EF15470FE70000B24A /* DMapView.m */; };
+		7D6F53F915470FE70000B24A /* SBHeatMapKmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6F53F215470FE70000B24A /* SBHeatMapKmlParser.m */; };
+		7D6F53FA15470FE70000B24A /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6F53F515470FE70000B24A /* NSDataAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7D6F53FB15470FE70000B24A /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6F53F715470FE70000B24A /* TBXML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7D6F53FD1547113C0000B24A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6F53FC1547113C0000B24A /* libz.dylib */; };
+		7D6F53FF1547149D0000B24A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6F53FE1547149D0000B24A /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7D6F53C715470E1E0000B24A /* DMapView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMapView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D6F53CB15470E1E0000B24A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7D6F53CD15470E1E0000B24A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7D6F53CF15470E1E0000B24A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7D6F53D315470E1E0000B24A /* DMapView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DMapView-Info.plist"; sourceTree = "<group>"; };
+		7D6F53D515470E1E0000B24A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7D6F53D715470E1E0000B24A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7D6F53D915470E1E0000B24A /* DMapView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMapView-Prefix.pch"; sourceTree = "<group>"; };
+		7D6F53DA15470E1E0000B24A /* DAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAppDelegate.h; sourceTree = "<group>"; };
+		7D6F53DB15470E1E0000B24A /* DAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAppDelegate.m; sourceTree = "<group>"; };
+		7D6F53DD15470E1E0000B24A /* DViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DViewController.h; sourceTree = "<group>"; };
+		7D6F53DE15470E1E0000B24A /* DViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DViewController.m; sourceTree = "<group>"; };
+		7D6F53E115470E1E0000B24A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DViewController.xib; sourceTree = "<group>"; };
+		7D6F53EB15470F840000B24A /* earth.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = earth.kml; path = ../earth.kml; sourceTree = "<group>"; };
+		7D6F53EE15470FE70000B24A /* DMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMapView.h; sourceTree = "<group>"; };
+		7D6F53EF15470FE70000B24A /* DMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMapView.m; sourceTree = "<group>"; };
+		7D6F53F115470FE70000B24A /* SBHeatMapKmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBHeatMapKmlParser.h; sourceTree = "<group>"; };
+		7D6F53F215470FE70000B24A /* SBHeatMapKmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBHeatMapKmlParser.m; sourceTree = "<group>"; };
+		7D6F53F415470FE70000B24A /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
+		7D6F53F515470FE70000B24A /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
+		7D6F53F615470FE70000B24A /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
+		7D6F53F715470FE70000B24A /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
+		7D6F53FC1547113C0000B24A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		7D6F53FE1547149D0000B24A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D6F53C415470E1E0000B24A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D6F53FF1547149D0000B24A /* CoreLocation.framework in Frameworks */,
+				7D6F53FD1547113C0000B24A /* libz.dylib in Frameworks */,
+				7D6F53CC15470E1E0000B24A /* UIKit.framework in Frameworks */,
+				7D6F53CE15470E1E0000B24A /* Foundation.framework in Frameworks */,
+				7D6F53D015470E1E0000B24A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D6F53BC15470E1E0000B24A = {
+			isa = PBXGroup;
+			children = (
+				7D6F53FE1547149D0000B24A /* CoreLocation.framework */,
+				7D6F53FC1547113C0000B24A /* libz.dylib */,
+				7D6F53D115470E1E0000B24A /* DMapView */,
+				7D6F53CA15470E1E0000B24A /* Frameworks */,
+				7D6F53C815470E1E0000B24A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D6F53C815470E1E0000B24A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D6F53C715470E1E0000B24A /* DMapView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D6F53CA15470E1E0000B24A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D6F53CB15470E1E0000B24A /* UIKit.framework */,
+				7D6F53CD15470E1E0000B24A /* Foundation.framework */,
+				7D6F53CF15470E1E0000B24A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D6F53D115470E1E0000B24A /* DMapView */ = {
+			isa = PBXGroup;
+			children = (
+				7D6F53ED15470FE70000B24A /* Mapview */,
+				7D6F53F015470FE70000B24A /* Parser */,
+				7D6F53DA15470E1E0000B24A /* DAppDelegate.h */,
+				7D6F53DB15470E1E0000B24A /* DAppDelegate.m */,
+				7D6F53DD15470E1E0000B24A /* DViewController.h */,
+				7D6F53DE15470E1E0000B24A /* DViewController.m */,
+				7D6F53E015470E1E0000B24A /* DViewController.xib */,
+				7D6F53D215470E1E0000B24A /* Supporting Files */,
+			);
+			path = DMapView;
+			sourceTree = "<group>";
+		};
+		7D6F53D215470E1E0000B24A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D6F53D315470E1E0000B24A /* DMapView-Info.plist */,
+				7D6F53D415470E1E0000B24A /* InfoPlist.strings */,
+				7D6F53D715470E1E0000B24A /* main.m */,
+				7D6F53D915470E1E0000B24A /* DMapView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D6F53ED15470FE70000B24A /* Mapview */ = {
+			isa = PBXGroup;
+			children = (
+				7D6F53EE15470FE70000B24A /* DMapView.h */,
+				7D6F53EF15470FE70000B24A /* DMapView.m */,
+			);
+			path = Mapview;
+			sourceTree = "<group>";
+		};
+		7D6F53F015470FE70000B24A /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				7D6F53EB15470F840000B24A /* earth.kml */,
+				7D6F53F115470FE70000B24A /* SBHeatMapKmlParser.h */,
+				7D6F53F215470FE70000B24A /* SBHeatMapKmlParser.m */,
+				7D6F53F315470FE70000B24A /* TBXML */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		7D6F53F315470FE70000B24A /* TBXML */ = {
+			isa = PBXGroup;
+			children = (
+				7D6F53F415470FE70000B24A /* NSDataAdditions.h */,
+				7D6F53F515470FE70000B24A /* NSDataAdditions.m */,
+				7D6F53F615470FE70000B24A /* TBXML.h */,
+				7D6F53F715470FE70000B24A /* TBXML.m */,
+			);
+			path = TBXML;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D6F53C615470E1E0000B24A /* DMapView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D6F53E515470E1E0000B24A /* Build configuration list for PBXNativeTarget "DMapView" */;
+			buildPhases = (
+				7D6F53C315470E1E0000B24A /* Sources */,
+				7D6F53C415470E1E0000B24A /* Frameworks */,
+				7D6F53C515470E1E0000B24A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DMapView;
+			productName = DMapView;
+			productReference = 7D6F53C715470E1E0000B24A /* DMapView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D6F53BE15470E1E0000B24A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 7D6F53C115470E1E0000B24A /* Build configuration list for PBXProject "DMapView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7D6F53BC15470E1E0000B24A;
+			productRefGroup = 7D6F53C815470E1E0000B24A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D6F53C615470E1E0000B24A /* DMapView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D6F53C515470E1E0000B24A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D6F53D615470E1E0000B24A /* InfoPlist.strings in Resources */,
+				7D6F53E215470E1E0000B24A /* DViewController.xib in Resources */,
+				7D6F53EC15470F840000B24A /* earth.kml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D6F53C315470E1E0000B24A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D6F53D815470E1E0000B24A /* main.m in Sources */,
+				7D6F53DC15470E1E0000B24A /* DAppDelegate.m in Sources */,
+				7D6F53DF15470E1E0000B24A /* DViewController.m in Sources */,
+				7D6F53F815470FE70000B24A /* DMapView.m in Sources */,
+				7D6F53F915470FE70000B24A /* SBHeatMapKmlParser.m in Sources */,
+				7D6F53FA15470FE70000B24A /* NSDataAdditions.m in Sources */,
+				7D6F53FB15470FE70000B24A /* TBXML.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7D6F53D415470E1E0000B24A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D6F53D515470E1E0000B24A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7D6F53E015470E1E0000B24A /* DViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D6F53E115470E1E0000B24A /* en */,
+			);
+			name = DViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D6F53E315470E1E0000B24A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		7D6F53E415470E1E0000B24A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D6F53E615470E1E0000B24A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMapView/DMapView-Prefix.pch";
+				INFOPLIST_FILE = "DMapView/DMapView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7D6F53E715470E1E0000B24A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMapView/DMapView-Prefix.pch";
+				INFOPLIST_FILE = "DMapView/DMapView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D6F53C115470E1E0000B24A /* Build configuration list for PBXProject "DMapView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D6F53E315470E1E0000B24A /* Debug */,
+				7D6F53E415470E1E0000B24A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D6F53E515470E1E0000B24A /* Build configuration list for PBXNativeTarget "DMapView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D6F53E615470E1E0000B24A /* Debug */,
+				7D6F53E715470E1E0000B24A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D6F53BE15470E1E0000B24A /* Project object */;
+}
