@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CD798E0159773E700E3B4DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD798DF159773E700E3B4DB /* UIKit.framework */; };
+		4CD798E2159773E700E3B4DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD798E1159773E700E3B4DB /* Foundation.framework */; };
+		4CD798E4159773E700E3B4DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD798E3159773E700E3B4DB /* CoreGraphics.framework */; };
+		4CD798EA159773E700E3B4DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CD798E8159773E700E3B4DB /* InfoPlist.strings */; };
+		4CD798EC159773E700E3B4DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD798EB159773E700E3B4DB /* main.m */; };
+		4CD798F0159773E700E3B4DB /* DAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD798EF159773E700E3B4DB /* DAppDelegate.m */; };
+		4CD798F3159773E700E3B4DB /* DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD798F2159773E700E3B4DB /* DViewController.m */; };
+		4CD798F6159773E700E3B4DB /* DViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD798F4159773E700E3B4DB /* DViewController.xib */; };
+		4CD799001597741400E3B4DB /* bg_1st@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD798FC1597741400E3B4DB /* bg_1st@2x.png */; };
+		4CD799011597741400E3B4DB /* bg_2nd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD798FD1597741400E3B4DB /* bg_2nd@2x.png */; };
+		4CD799021597741400E3B4DB /* bg_3rd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD798FE1597741400E3B4DB /* bg_3rd@2x.png */; };
+		4CD799051597753900E3B4DB /* bg_4th@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD799041597753900E3B4DB /* bg_4th@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4CD798DB159773E700E3B4DB /* DCustomScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCustomScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CD798DF159773E700E3B4DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4CD798E1159773E700E3B4DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4CD798E3159773E700E3B4DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4CD798E7159773E700E3B4DB /* DCustomScroll-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DCustomScroll-Info.plist"; sourceTree = "<group>"; };
+		4CD798E9159773E700E3B4DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CD798EB159773E700E3B4DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CD798ED159773E700E3B4DB /* DCustomScroll-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCustomScroll-Prefix.pch"; sourceTree = "<group>"; };
+		4CD798EE159773E700E3B4DB /* DAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAppDelegate.h; sourceTree = "<group>"; };
+		4CD798EF159773E700E3B4DB /* DAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAppDelegate.m; sourceTree = "<group>"; };
+		4CD798F1159773E700E3B4DB /* DViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DViewController.h; sourceTree = "<group>"; };
+		4CD798F2159773E700E3B4DB /* DViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DViewController.m; sourceTree = "<group>"; };
+		4CD798F5159773E700E3B4DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DViewController.xib; sourceTree = "<group>"; };
+		4CD798FC1597741400E3B4DB /* bg_1st@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_1st@2x.png"; sourceTree = "<group>"; };
+		4CD798FD1597741400E3B4DB /* bg_2nd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_2nd@2x.png"; sourceTree = "<group>"; };
+		4CD798FE1597741400E3B4DB /* bg_3rd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_3rd@2x.png"; sourceTree = "<group>"; };
+		4CD799041597753900E3B4DB /* bg_4th@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_4th@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CD798D8159773E700E3B4DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD798E0159773E700E3B4DB /* UIKit.framework in Frameworks */,
+				4CD798E2159773E700E3B4DB /* Foundation.framework in Frameworks */,
+				4CD798E4159773E700E3B4DB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CD798D0159773E600E3B4DB = {
+			isa = PBXGroup;
+			children = (
+				4CD798E5159773E700E3B4DB /* DCustomScroll */,
+				4CD798DE159773E700E3B4DB /* Frameworks */,
+				4CD798DC159773E700E3B4DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CD798DC159773E700E3B4DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CD798DB159773E700E3B4DB /* DCustomScroll.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CD798DE159773E700E3B4DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CD798DF159773E700E3B4DB /* UIKit.framework */,
+				4CD798E1159773E700E3B4DB /* Foundation.framework */,
+				4CD798E3159773E700E3B4DB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CD798E5159773E700E3B4DB /* DCustomScroll */ = {
+			isa = PBXGroup;
+			children = (
+				4CD798FC1597741400E3B4DB /* bg_1st@2x.png */,
+				4CD798FD1597741400E3B4DB /* bg_2nd@2x.png */,
+				4CD798FE1597741400E3B4DB /* bg_3rd@2x.png */,
+				4CD799041597753900E3B4DB /* bg_4th@2x.png */,
+				4CD798EE159773E700E3B4DB /* DAppDelegate.h */,
+				4CD798EF159773E700E3B4DB /* DAppDelegate.m */,
+				4CD798F1159773E700E3B4DB /* DViewController.h */,
+				4CD798F2159773E700E3B4DB /* DViewController.m */,
+				4CD798F4159773E700E3B4DB /* DViewController.xib */,
+				4CD798E6159773E700E3B4DB /* Supporting Files */,
+			);
+			path = DCustomScroll;
+			sourceTree = "<group>";
+		};
+		4CD798E6159773E700E3B4DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CD798E7159773E700E3B4DB /* DCustomScroll-Info.plist */,
+				4CD798E8159773E700E3B4DB /* InfoPlist.strings */,
+				4CD798EB159773E700E3B4DB /* main.m */,
+				4CD798ED159773E700E3B4DB /* DCustomScroll-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CD798DA159773E700E3B4DB /* DCustomScroll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CD798F9159773E700E3B4DB /* Build configuration list for PBXNativeTarget "DCustomScroll" */;
+			buildPhases = (
+				4CD798D7159773E700E3B4DB /* Sources */,
+				4CD798D8159773E700E3B4DB /* Frameworks */,
+				4CD798D9159773E700E3B4DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCustomScroll;
+			productName = DCustomScroll;
+			productReference = 4CD798DB159773E700E3B4DB /* DCustomScroll.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CD798D2159773E600E3B4DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 4CD798D5159773E600E3B4DB /* Build configuration list for PBXProject "DCustomScroll" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4CD798D0159773E600E3B4DB;
+			productRefGroup = 4CD798DC159773E700E3B4DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CD798DA159773E700E3B4DB /* DCustomScroll */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CD798D9159773E700E3B4DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD798EA159773E700E3B4DB /* InfoPlist.strings in Resources */,
+				4CD798F6159773E700E3B4DB /* DViewController.xib in Resources */,
+				4CD799001597741400E3B4DB /* bg_1st@2x.png in Resources */,
+				4CD799011597741400E3B4DB /* bg_2nd@2x.png in Resources */,
+				4CD799021597741400E3B4DB /* bg_3rd@2x.png in Resources */,
+				4CD799051597753900E3B4DB /* bg_4th@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CD798D7159773E700E3B4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD798EC159773E700E3B4DB /* main.m in Sources */,
+				4CD798F0159773E700E3B4DB /* DAppDelegate.m in Sources */,
+				4CD798F3159773E700E3B4DB /* DViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4CD798E8159773E700E3B4DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CD798E9159773E700E3B4DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4CD798F4159773E700E3B4DB /* DViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CD798F5159773E700E3B4DB /* en */,
+			);
+			name = DViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CD798F7159773E700E3B4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4CD798F8159773E700E3B4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CD798FA159773E700E3B4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCustomScroll/DCustomScroll-Prefix.pch";
+				INFOPLIST_FILE = "DCustomScroll/DCustomScroll-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4CD798FB159773E700E3B4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCustomScroll/DCustomScroll-Prefix.pch";
+				INFOPLIST_FILE = "DCustomScroll/DCustomScroll-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CD798D5159773E600E3B4DB /* Build configuration list for PBXProject "DCustomScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CD798F7159773E700E3B4DB /* Debug */,
+				4CD798F8159773E700E3B4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CD798F9159773E700E3B4DB /* Build configuration list for PBXNativeTarget "DCustomScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CD798FA159773E700E3B4DB /* Debug */,
+				4CD798FB159773E700E3B4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CD798D2159773E600E3B4DB /* Project object */;
+}
