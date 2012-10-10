@@ -1,0 +1,4 @@
+
+h2. Documentation
+
+simple doxygen style documentation, can run HeaderDoc to generate a apple like documentation also.
