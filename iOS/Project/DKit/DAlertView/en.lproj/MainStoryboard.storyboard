@@ -96,7 +96,7 @@
                                     <action selector="alertLoginType:" destination="2" eventType="touchUpInside" id="008-2S-NvJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKL-dR-rfR">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="246" translatesAutoresizingMaskIntoConstraints="NO" id="BKL-dR-rfR">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="157" id="U2i-IH-JmM"/>
                                 </constraints>

@@ -45,6 +45,29 @@
     
 }
 
+-(id)   initWithTitle:(NSString *)title
+              message:(NSString *)message
+    cancelButtonTitle:(NSString *)cancelButtonTitle cancelTapBlock:(DAlertViewTapBlock)block
+firstOtherButtonTitle:(NSString *)otherButtonTitle otherButtonTapBlock:(DAlertViewTapBlock) otherBlock
+{
+    self = [super initWithTitle:title
+                        message:message
+                       delegate:self
+              cancelButtonTitle:cancelButtonTitle
+              otherButtonTitles:otherButtonTitle,nil];
+    if(self) {
+        NSInteger index = [self cancelButtonIndex];
+        if(block)
+            [_tapBlocksDictionary setObject:[block copy] forKey:@(index)];
+        
+        index = [self firstOtherButtonIndex];
+        if(otherBlock)
+            [_tapBlocksDictionary setObject:[otherBlock copy] forKey:@(index)];
+    }
+    return self;
+
+}
+
 - (id)init
 {
 	self = [super init];
@@ -123,8 +146,6 @@
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    NSLog(@"clickecd button at index %d",buttonIndex);
-    
     DAlertViewTapBlock tapBlock = [_tapBlocksDictionary objectForKey:@(buttonIndex)];
     if(tapBlock)
         tapBlock(self);
@@ -164,7 +185,6 @@
     
     return YES;
 }
-
 
 
 @end

@@ -110,22 +110,28 @@
 - (IBAction)alertLoginType:(id)sender {
     DAlertView *alert = [[DAlertView alloc] initWithTitle:@"title"
                                                   message:@"message"
-                                        cancelButtonTitle:@"cancel" cancelTapBlock:^(UIAlertView *alert) {
-                                            self.outputLabel.text = @"CANCEL login type";
-                                        }];
+                                        cancelButtonTitle:@"cancel" cancelTapBlock:nil
+                                    firstOtherButtonTitle:@"OK" otherButtonTapBlock:^(UIAlertView *me) {
+                             
+                                        self.outputLabel.text = [NSString stringWithFormat:@"Got Login %@\nGot Password %@",[me textFieldAtIndex:0].text,[me textFieldAtIndex:1].text];
+
+                         }];
     alert.alertViewStyle = UIAlertViewStyleLoginAndPasswordInput;
+
+    alert.alertViewShouldEnableFirstOtherButtonBlock = ^BOOL(UIAlertView *me) {
+        if([[me textFieldAtIndex:0].text length]<4) {
+            return NO;
+        }
+        return YES;
+    };
     
-    [alert addButtonWithTitle:@"OK" tapBlock:^(UIAlertView *alert) {
-        
-        self.outputLabel.text = [NSString stringWithFormat:@"Got Login %@",[alert textFieldAtIndex:0].text];
-        self.outputLabel.text = [NSString stringWithFormat:@"Got Password %@",[alert textFieldAtIndex:1].text];
-
-    }];
+    alert.delegate = self;
     [alert show];
-
 }
 
 @end
 
 /* ==SNIPPETS==
+ 
+ */
  
