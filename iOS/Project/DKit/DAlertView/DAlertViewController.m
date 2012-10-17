@@ -29,32 +29,40 @@
 - (IBAction)alertNoButtons:(id)sender {
     DAlertView *alert = [[DAlertView alloc] initWithTitle:@"title"
                                                   message:@"message"
-                                        cancelButtonTitle:@"OK" cancelTapBlock:^(UIAlertView* alert){
-                                            self.outputLabel.text = @"no button alert OK tapped";
-                                        }];
+                                        cancelButtonTitle:@"OK"];
     [alert show];
 }
 
 - (IBAction)alert1Button:(id)sender {
-    DAlertView *alert = [[DAlertView alloc] initWithTitle:@"title"
-                                                  message:@"message"
-                                        cancelButtonTitle:@"cancel" cancelTapBlock:^(UIAlertView *alert) {
-                                            self.outputLabel.text = @"CANCEL in alert 1 button";
-                                        }];
+    DAlertView *alert = [[DAlertView alloc] initWithTitle:@"Two Buttons"
+                                                  message:@"Will show yes no dialog when done"
+                                        cancelButtonTitle:@"Cancel"];
     
     [alert addButtonWithTitle:@"OK" tapBlock:^(UIAlertView *alert) {
         
        self.outputLabel.text = @"OK tapped in alert 1 button";
+        
+        
+        
+        DAlertView *alert2 = [[DAlertView alloc] initWithTitle:@"title"
+                                                      message:@"Will show yes no dialog when done"
+                                            cancelButtonTitle:nil];
+        [alert2 addButtonWithTitle:@"YES" tapBlock:^(UIAlertView *me) {
+            self.outputLabel.text = @"YES tapped";
+        }];
+        [alert2 addButtonWithTitle:@"NO" tapBlock:^(UIAlertView *me) {
+            self.outputLabel.text = @"NO tapped";
+        }];
+        [alert2 show];
     }];
+    
     [alert show];
 }
 
 - (IBAction)alert2Button:(id)sender {
     DAlertView *alert = [[DAlertView alloc] initWithTitle:@"title"
                                                   message:@"message"
-                                        cancelButtonTitle:@"NO" cancelTapBlock:^(UIAlertView *alert) {
-                                            self.outputLabel.text = @"CANCEL in alert 2 button";
-                                        }];
+                                        cancelButtonTitle:@"Cancel"];
     
     [alert addButtonWithTitle:@"YES" tapBlock:^(UIAlertView *alert) {
         
@@ -65,15 +73,14 @@
         
         self.outputLabel.text = @"MAYBE in alert 2 button";
     }];
+    
     [alert show];
 }
 
 - (IBAction)alert3Button:(id)sender {
     DAlertView *alert = [[DAlertView alloc] initWithTitle:@"title"
                                                   message:@"message"
-                                        cancelButtonTitle:@"NO" cancelTapBlock:^(UIAlertView *alert) {
-                                            self.outputLabel.text = @"CANCEL in alert 3 button";
-                                        }];
+                                        cancelButtonTitle:@"Cancel"];
     
     [alert addButtonWithTitle:@"YES" tapBlock:^(UIAlertView *alert) {
         
@@ -95,9 +102,7 @@
 - (IBAction)alertInputType:(id)sender {
     DAlertView *alert = [[DAlertView alloc] initWithTitle:@"title"
                                                   message:@"message"
-                                        cancelButtonTitle:@"cancel" cancelTapBlock:^(UIAlertView *alert) {
-                                            self.outputLabel.text = @"CANCEL input type";
-                                        }];
+                                        cancelButtonTitle:@"cancel"];
     alert.alertViewStyle = UIAlertViewStylePlainTextInput;
     
     [alert addButtonWithTitle:@"OK" tapBlock:^(UIAlertView *alert) {
@@ -110,8 +115,8 @@
 - (IBAction)alertLoginType:(id)sender {
     DAlertView *alert = [[DAlertView alloc] initWithTitle:@"title"
                                                   message:@"message"
-                                        cancelButtonTitle:@"cancel" cancelTapBlock:nil
-                                    firstOtherButtonTitle:@"OK" otherButtonTapBlock:^(UIAlertView *me) {
+                                        cancelButtonTitle:@"cancel"
+                                    firstOtherButtonTitle:@"OK" firstOtherButtonTapBlock:^(UIAlertView *me) {
                              
                                         self.outputLabel.text = [NSString stringWithFormat:@"Got Login %@\nGot Password %@",[me textFieldAtIndex:0].text,[me textFieldAtIndex:1].text];
 

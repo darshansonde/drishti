@@ -21,12 +21,11 @@ typedef BOOL (^DAlertViewShouldEnableFirstOtherButtonBlock)(UIAlertView *me);
  The delegate callbacks will exist in addition to block callbacks.
  @param title the title of alert view can be nil
  @param message the message of alert view
- @param cancelButtonTitle the title of cancel button, placement is by UIAlertView 
- @param cancelTapBlock, will be called apart from the delegate callback.
+ @param cancelButtonTitle the title of cancel button, placement is by UIAlertView
  */
 -(id) initWithTitle:(NSString *)title
             message:(NSString *)message
-  cancelButtonTitle:(NSString *)cancelButtonTitle cancelTapBlock:(DAlertViewTapBlock)block;
+  cancelButtonTitle:(NSString *)cancelButtonTitle;
 
 /*!
  create a basic UIAlertView with cancel button, one other button and return. other buttons can be added using addButtonWithTitle:tapBlock: selector.
@@ -40,8 +39,8 @@ typedef BOOL (^DAlertViewShouldEnableFirstOtherButtonBlock)(UIAlertView *me);
  */
 -(id)   initWithTitle:(NSString *)title
               message:(NSString *)message
-    cancelButtonTitle:(NSString *)cancelButtonTitle cancelTapBlock:(DAlertViewTapBlock)block
-firstOtherButtonTitle:(NSString *)otherButtonTitle otherButtonTapBlock:(DAlertViewTapBlock) otherBlock;
+    cancelButtonTitle:(NSString *)cancelButtonTitle
+firstOtherButtonTitle:(NSString *)otherButtonTitle firstOtherButtonTapBlock:(DAlertViewTapBlock) otherBlock;
 
 
  /*!

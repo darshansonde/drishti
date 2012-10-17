@@ -29,7 +29,7 @@
 
 -(id) initWithTitle:(NSString *)title
             message:(NSString *)message
-  cancelButtonTitle:(NSString *)cancelButtonTitle cancelTapBlock:(DAlertViewTapBlock)block
+  cancelButtonTitle:(NSString *)cancelButtonTitle
 {
     self = [super initWithTitle:title
                         message:message
@@ -37,9 +37,6 @@
               cancelButtonTitle:cancelButtonTitle
               otherButtonTitles:nil];
     if(self) {
-        NSInteger index = [self cancelButtonIndex];
-        if(block)
-            [_tapBlocksDictionary setObject:[block copy] forKey:@(index)];
     }
     return self;
     
@@ -47,8 +44,8 @@
 
 -(id)   initWithTitle:(NSString *)title
               message:(NSString *)message
-    cancelButtonTitle:(NSString *)cancelButtonTitle cancelTapBlock:(DAlertViewTapBlock)block
-firstOtherButtonTitle:(NSString *)otherButtonTitle otherButtonTapBlock:(DAlertViewTapBlock) otherBlock
+    cancelButtonTitle:(NSString *)cancelButtonTitle
+firstOtherButtonTitle:(NSString *)otherButtonTitle firstOtherButtonTapBlock:(DAlertViewTapBlock) otherBlock
 {
     self = [super initWithTitle:title
                         message:message
@@ -56,11 +53,7 @@ firstOtherButtonTitle:(NSString *)otherButtonTitle otherButtonTapBlock:(DAlertVi
               cancelButtonTitle:cancelButtonTitle
               otherButtonTitles:otherButtonTitle,nil];
     if(self) {
-        NSInteger index = [self cancelButtonIndex];
-        if(block)
-            [_tapBlocksDictionary setObject:[block copy] forKey:@(index)];
-        
-        index = [self firstOtherButtonIndex];
+        NSInteger index = [self firstOtherButtonIndex];
         if(otherBlock)
             [_tapBlocksDictionary setObject:[otherBlock copy] forKey:@(index)];
     }
@@ -102,7 +95,7 @@ firstOtherButtonTitle:(NSString *)otherButtonTitle otherButtonTapBlock:(DAlertVi
             _delegateFlags.delegateAlertViewCancel = YES;
         }
         
-        if ([_externalDelegate respondsToSelector:@selector(willPresentAlertView::)])
+        if ([_externalDelegate respondsToSelector:@selector(willPresentAlertView:)])
         {
             _delegateFlags.delegateWillPresentAlertView = YES;
         }
@@ -153,13 +146,9 @@ firstOtherButtonTitle:(NSString *)otherButtonTitle otherButtonTapBlock:(DAlertVi
     if(_delegateFlags.delegateAlertViewClickedButtonAtIndex)
         [_externalDelegate alertView:alertView clickedButtonAtIndex:buttonIndex];
 }
+
 - (void)alertViewCancel:(UIAlertView *)alertView
 {
-    NSInteger cancelButtonIndex = [alertView cancelButtonIndex];
-    DAlertViewTapBlock tapBlock = [_tapBlocksDictionary objectForKey:@(cancelButtonIndex)];
-    if(tapBlock)
-        tapBlock(alertView);
-    
     if(_delegateFlags.delegateAlertViewCancel)
         [_externalDelegate alertViewCancel:alertView];
 }
