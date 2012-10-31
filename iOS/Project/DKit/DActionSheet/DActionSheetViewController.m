@@ -28,7 +28,7 @@
 }
 - (IBAction)cancelSheet:(id)sender {
     DActionSheet *action = [[DActionSheet alloc] initWithTitle:nil];
-    [action addCancelButtonWithTitle:@"Cancel"];
+    [action addCancelButtonWithTitle:@"Cancel" tapBlock:nil];
     [action showInView:self.view];
 }
 - (IBAction)oneOptionSheet:(id)sender {
@@ -36,7 +36,7 @@
     [action addButtonWithTitle:@"First Button" tapBlock:^(UIActionSheet *me) {
         [[[UIAlertView alloc] initWithTitle:@"One Message Tapped" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
     }];
-    [action addCancelButtonWithTitle:@"Cancel"];
+    [action addCancelButtonWithTitle:@"Cancel"  tapBlock:nil];
     [action showInView:self.view];
 }
 - (IBAction)oneOptionDestructiveSheet:(id)sender {
@@ -47,7 +47,7 @@
     [action addDestructiveButtonWithTitle:@"Delete Button" tapBlock:^(UIActionSheet *me) {
         [[[UIAlertView alloc] initWithTitle:@"Delete Tapped" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
     }];
-    [action addCancelButtonWithTitle:@"Cancel"];
+    [action addCancelButtonWithTitle:@"Cancel"  tapBlock:nil];
     [action showInView:self.view];
 
 }
@@ -59,7 +59,7 @@
     [action addButtonWithTitle:@"Second Button" tapBlock:^(UIActionSheet *me) {
         [[[UIAlertView alloc] initWithTitle:@"Second Tapped" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
     }];
-    [action addCancelButtonWithTitle:@"Cancel"];
+    [action addCancelButtonWithTitle:@"Cancel"  tapBlock:nil];
     [action showInView:self.view];
 }
 - (IBAction)twoOptionDestructiveSheet:(id)sender {
@@ -76,7 +76,7 @@
         [[[UIAlertView alloc] initWithTitle:@"Delete Tapped" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
     }];
     
-    [action addCancelButtonWithTitle:@"Cancel"];
+    [action addCancelButtonWithTitle:@"Cancel"  tapBlock:nil];
     
     [action showInView:self.view];
 

@@ -114,9 +114,9 @@
     return index;
 }
 
--(NSInteger) addCancelButtonWithTitle:(NSString *)title
+-(NSInteger) addCancelButtonWithTitle:(NSString *)title tapBlock:(DActionSheetTapBlock) block
 {
-    NSInteger index = [super addButtonWithTitle:title];
+    NSInteger index = [self addButtonWithTitle:title tapBlock:block];
     self.cancelButtonIndex = index;
     
     return index;

@@ -23,14 +23,14 @@ typedef void (^DActionSheetTapBlock)(UIActionSheet *me);
 /*!
  add a button to the action sheet. 
  @sa addDestructiveButton:tapBlock:
- @sa addCancelButton:
+ @sa addCancelButton:tapBlock:
  */
 -(NSInteger) addButtonWithTitle:(NSString *)title tapBlock:(DActionSheetTapBlock)block;
 
 /*!
  add a destructive button to the action sheet. this resets destructiveButtonIndex.
  @sa addButtonWithTitle:tapBlock:
- @sa addCancelButton:
+ @sa addCancelButton:tapBlock:
  */
 -(NSInteger) addDestructiveButtonWithTitle:(NSString *)title tapBlock:(DActionSheetTapBlock)block;
 
@@ -39,6 +39,6 @@ typedef void (^DActionSheetTapBlock)(UIActionSheet *me);
  @sa addButtonWithTitle:tapBlock:
  @sa addDestructiveButtonWithTitle:tapBlock:
  */
--(NSInteger) addCancelButtonWithTitle:(NSString *)title;
+-(NSInteger) addCancelButtonWithTitle:(NSString *)title tapBlock:(DActionSheetTapBlock)block;
 
 @end
